@@ -6,7 +6,7 @@ import os
 
 app = FastAPI()
 
-MONGO_DETAILS = os.getenv("MONGO_URI", "mongodb://localhost:27017")
+MONGO_DETAILS = "mongodb+srv://salmayasmin:Wisdom-9@ai-symptom-checker.laz2zmr.mongodb.net/?retryWrites=true&w=majority"
 client = AsyncIOMotorClient(MONGO_DETAILS)
 db = client.health_survey_db
 collection = db.surveys
